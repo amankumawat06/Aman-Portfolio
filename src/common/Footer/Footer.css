@@ -1,0 +1,22 @@
+/* .footer{
+    height: 56px;
+    background-color: #a6b4c0c4;
+    box-shadow: 10px 0 3px 4px #0b1220;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.footer {
+  background: #0b0f19;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(34, 211, 238, 0.15);
+  /* position: fixed !;
+  bottom: 0 !important; */
+}
