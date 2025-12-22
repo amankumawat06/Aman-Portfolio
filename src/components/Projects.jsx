@@ -1,61 +1,3 @@
-// import React from "react";
-// import "./style.css";
-
-// const Projects = () => {
-//   return (
-//     <div className="container" id="projects">
-//       <h1 className="my-5">Projects</h1>
-//       {/* <div className='projectContainer'> */}
-//       <div className="row mb-5">
-//         <div className="project col-lg-5 offset-lg-1 col-sm-12">
-//           <div className="Above d-flex justify-content-between align-items-center">
-//             <div className="title">Title</div>
-//             <button className="viewProject">View Project</button>
-//           </div>
-//           {/* <hr /> */}
-//           <div className="below">
-//             <div className="description text-start">description</div>
-//           </div>
-//         </div>
-//         <div className="project col-lg-5 col-sm-12">
-//           <div className="Above d-flex justify-content-between align-items-center">
-//             <div className="title">Title</div>
-//             <button className="viewProject">View Project</button>
-//           </div>
-//           {/* <hr /> */}
-//           <div className="below">
-//             <div className="description text-start">description</div>
-//           </div>
-//         </div>
-//         <div className="project col-lg-5 offset-lg-1 col-sm-12">
-//           <div className="Above d-flex justify-content-between align-items-center">
-//             <div className="title">Title</div>
-//             <button className="viewProject">View Project</button>
-//           </div>
-//           {/* <hr /> */}
-//           <div className="below">
-//             <div className="description text-start">description</div>
-//           </div>
-//         </div>
-//         <div className="project col-lg-5 col-sm-12">
-//           <div className="Above d-flex justify-content-between align-items-center">
-//             <div className="title">Title</div>
-//             <button className="viewProject">View Project</button>
-//           </div>
-//           {/* <hr /> */}
-//           <div className="below">
-//             <div className="description text-start">description</div>
-//           </div>
-//         </div>
-//       </div>
-//       {/* </div> */}
-//     </div>
-//   );
-// };
-
-// export default Projects;
-
-
 import React,{useState} from "react";
 import "./style.css";
 
@@ -134,7 +76,6 @@ const Projects = () => {
         <button className={filter === "fullstack" ? "selectedSkill" : ""} onClick={() => setFilter("fullstack")}>Full Stack</button>
       </div>
 
-      {/* PROJECT GRID */}
       <div className="projects-grid">
         {filteredProjects.map((project, index) => (
           <div className="project-card"  key={index}>

@@ -1,46 +1,3 @@
-// import React from 'react'
-// import "./style.css"
-
-// let projects = [
-//   {
-//     title : "Full Stack Decveloper at webMobi360",
-//     timeLine : "Oct 2026 - Present",
-//     desc: [
-//       "This is the first project of my life",
-//       "Worked on real-world features",
-//       "Collaborated with team members"
-//     ]
-//   }
-// ]
-
-// const Experience = () => {
-//   return (
-//     <div className='container expContainer' id='experience'>
-//       <h1 className='mb-5 expHeadding'>Experience</h1>
-//        {
-//           projects.map((project,idx) => {
-//             return(
-              
-//             <div className='experience' key={idx}>
-//              <strong>{project.title}</strong><br />
-//               <strong>{project.timeLine}</strong>
-//               {
-//                 project.desc.map((description) => (
-//                   <p>{description}</p>
-//                 ))
-//               }
-//             </div>
-//             )
-//           })
-//         }
-//       </div>
-//   )
-// }
-
-
-// export default Experience
-
-
 import React from "react";
 import "./style.css";
 
@@ -70,7 +27,7 @@ const Experience = () => {
 
             <div className="exp-card">
               <h3>{exp.title}</h3>
-              <a href="https://www.webmobi360.com/" target="_blank" className="exp-company">{exp.company}</a>
+              <a href="https://www.webmobi360.com/" target="_blank" rel="noreferrer"  className="exp-company">{exp.company}</a>
               <span className="exp-date">{exp.timeLine}</span>
 
               <ul>

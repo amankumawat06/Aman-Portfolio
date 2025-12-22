@@ -1,38 +1,3 @@
-// import React from 'react'
-// import "./style.css"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-// import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
-// const contactDetails = [
-//   {
-//     number : "(+91) 9079720440",
-//     Email : "amankumawat4507@gmail.com",
-//     Linkedin : "Aman kumawat",
-//     linkedinLink: "https://www.linkedin.com/in/aman-kumawat-8b3aaa343/",
-//   }
-// ]
-
-// const Contact = () => {
-//   return (
-//     <div className='container contactBox' id='contact'>
-//       <h1 className='mt-5 mb-5'>Contact</h1>
-//       {
-//         contactDetails.map((contact,idx) => (
-//           <div className='contactContainer' key={idx}>
-//           <div className='contact-icon'><FontAwesomeIcon icon={faPhone} />{contact.number}</div>
-//           <div className='contact-icon'> <FontAwesomeIcon icon={faEnvelope} />{contact.Email}</div>
-//           <div className='contact-icon'><FontAwesomeIcon icon={faLinkedin} />{contact.Linkedin}</div>
-//       </div>
-//         ))
-//       }
-//     </div>
-//   )
-// }
-
-// export default Contact
-
-
 import React from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

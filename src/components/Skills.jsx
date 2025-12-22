@@ -1,30 +1,3 @@
-// import React from 'react'
-// import "./style.css"
-
-// const Skills = () => {
-//   return (
-//     <div className='container mb-5 mt-5' id='skills'>
-//       <h1 className='my-5'>Skills</h1>
-//       <div className='row gx-4 mt-5 pt-5 pb-3 boxShadowDes'>
-//         <div className='skill col-12 col-md-5 col-lg-5 offset-lg-1'>HTML</div>
-//         <div className='skill col-12 col-md-5 col-lg-5'>CSS</div>
-//         <div className='skill col-12 col-md-5 col-lg-5 offset-lg-1'>JavaScript</div>
-//         <div className='skill col-12 col-md-5 col-lg-5' data-aos="flip-left">React</div>
-//         <div className='skill col-12 col-md-5 col-lg-5 offset-lg-1'>Express</div>
-//         <div className='skill col-12 col-md-5 col-lg-5'>Node</div>
-//         <div className='skill col-12 col-md-5 col-lg-5 offset-lg-1'>MONGODB</div>
-//         <div className='skill col-12 col-md-5 col-lg-5'>RESTful APIs</div>
-//         <div className='skill col-12 col-md-5 col-lg-5 offset-lg-1'>Tailwind CSS</div>
-//         <div className='skill col-12 col-md-5 col-lg-5'>Bootstrap</div>
-//         <div className='skill col-12 col-md-5 col-lg-5 offset-lg-1'>Redux</div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Skills
-
-
 import React from "react";
 import "./style.css";
 import {
