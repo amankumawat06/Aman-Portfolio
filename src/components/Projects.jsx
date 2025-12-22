@@ -38,7 +38,7 @@ const projectData = [
     image: "../Images/project-portfolio.png",
     tech: ["Node", "Express", "EJS", "MongoDB", "Bootstrap"],
     category: "backend",
-    live: "https:/mini-quroa.onrender.com/posts",
+    live: "https://mini-quroa.onrender.com/posts",
     github: "https://github.com/amankumawat06/Tweet-web-App",
   },
   {
@@ -51,8 +51,8 @@ const projectData = [
     image: "../Images/project-api.png",
     tech: ["React", "Javascript", "Bootstrap", "CSS", "Font-awesome"],
     category: "frontend",
-    live: "#",
-    github: "#",
+    live: "https://aman-portfolio-42wk.vercel.app/",
+    github: "https://github.com/amankumawat06/Aman-Portfolio/blob/main/src/App.js",
   },
 ];
 
