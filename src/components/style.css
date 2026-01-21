@@ -393,6 +393,7 @@
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  min-height: 177px;
 }
 
 .skill-card::before {
@@ -415,7 +416,7 @@
 /* CARD TITLE */
 .skill-card h3 {
   font-size: 1.4rem;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   color: #22d3ee;
 }
 
@@ -429,6 +430,7 @@
 .skill-tags span {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   background: #111827;
   padding: 8px 14px;
@@ -436,7 +438,8 @@
   font-size: 14px;
   border: 1px solid rgba(34, 211, 238, 0.3);
   transition: 0.3s;
-    cursor: pointer !important; 
+  cursor: pointer !important; 
+  min-width: 100px;
 }
 .skill-tags span svg {
   font-size: 18px;
@@ -467,6 +470,7 @@
 .mongo { color: #47a248; }
 .git { color: #f05032; }
 .github { color: #e5e7eb; }
+.cloudinary { color: #3448c5; }
 
 
 
@@ -518,13 +522,14 @@
   transition: transform 0.4s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   padding: 0 7px 10px;
+  position: relative;
+  padding-bottom: 70px;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
 }
 
-/* IMAGE */
 .project-image {
   position: relative;
   overflow: hidden; 
@@ -569,7 +574,6 @@
   transform: translateY(0);
 }
 
-/* CONTENT */
 .project-content {
   padding: 25px;
   font-family: "Montserrat", sans-serif;
@@ -601,7 +605,6 @@
   color: #cbd5f5;
 }
 
-/* TECH STACK */
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -617,26 +620,26 @@
   border: 1px solid rgba(34, 211, 238, 0.3);
 }
 
-/* RESPONSIVE */
 @media (max-width: 975px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
 }
 
-/* ACTION BUTTONS */
 .project-actions {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
   justify-content: space-evenly;
-  gap: 15px;
-  /* width: 300px; */
+  gap: 16px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .project-actions a {
-  flex: 1;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 30px;
   border-radius: 25px;
   font-weight: 600;
   text-decoration: none;
@@ -644,8 +647,10 @@
   border: 1px solid #22d3ee;
   color: #22d3ee;
   transition: 0.3s ease;
-  max-width: 110px;
+  min-width: 110px;
+  margin: 0 20px;
 }
+
 
 .project-actions a:hover {
   background: #22d3ee;
@@ -658,7 +663,11 @@
   font-weight: 600 !important;
 }
 
-
+@media (min-width:500px) and (max-width:975px) {
+  .project-actions a{
+    margin: 0 80px;
+  }
+}
 
 
 /* EXPERIENCE SECTION */
@@ -876,7 +885,7 @@
 }
 
 .cert-btn:hover::before{
-  content: "View";
+  content: "view";
   position: absolute;
   top: 0;
   right: -50px;
@@ -1037,6 +1046,7 @@
 
 .socialIcons .icon:hover {
   transform: translateY(-6px) scale(1.06);
+  transition: all 0.2s ease-in-out;
 }
 
 .insta:hover {

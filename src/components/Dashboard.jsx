@@ -8,15 +8,12 @@ const Dashboard = () => {
   const navigate = useNavigate();
   return (
     <section className="hero-section" id="about">
-      {/* ABOUT HEADING */}
       <div className="about-heading">
         <h2 className="titleLine">About</h2>
         {/* <div className="about-line"></div> */}
       </div>
 
-      {/* HERO CONTENT */}
       <div className="hero-container">
-        {/* LEFT */}
         <div className="hero-left">
           <span className="hero-badge">👋 Hii, I'm Aman kumawat</span>
 
@@ -25,13 +22,13 @@ const Dashboard = () => {
           </h1>
 
           <p className="hero-subtitle">
-            I'm a BCA graduate. Currently, I'm working as a Full stack developer Intern at webMobi360 <br />
+            BCA graduate from Apex university, focused on building real wrold full stack application <br />
             <div
               className="knowMore mt-2"
               // onClick={() => navigate("/moreAboutMe")}
             >
               <Link to="/moreAboutMe" className="knowMore-link" target="_blank" rel="noopener noreferrer">
-                know more About me...
+                know more about me...
               </Link>
             </div>
           </p>
@@ -53,7 +50,6 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Right Panel */}
         <div className="hero-right">
           <div className="image-glow"></div>
           <img
@@ -74,7 +70,7 @@ const Dashboard = () => {
           <FaLinkedin className="social-icon lin" /> 
         </a>
         <a href="https://github.com/amankumawat06?tab=repositories" target="_blank" className="icon github"> 
-          <FaGithub className="social-icon github"/> 
+          <FaGithub className="social-icon githu"/> 
         </a>
       </div>
     </section>

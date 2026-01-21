@@ -13,6 +13,7 @@ import {
   SiRedux,
   SiGit,
   SiGithub,
+  SiCloudinary,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -22,7 +23,6 @@ const Skills = () => {
 
       <div className="skills-grid">
 
-        {/* FRONTEND */}
         <div className="skill-card">
           <h3>Frontend</h3>
           <div className="skill-tags">
@@ -35,7 +35,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* BACKEND */}
         <div className="skill-card">
           <h3>Backend</h3>
           <div className="skill-tags">
@@ -46,13 +45,19 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* DATABASE & TOOLS */}
         <div className="skill-card">
           <h3>Database & Tools</h3>
           <div className="skill-tags">
             <span><SiMongodb className="mongo"/> MongoDB</span>
             <span><SiGit className="git"/> Git</span>
             <span><SiGithub className="github"/> GitHub</span>
+          </div>
+        </div>
+
+        <div className="skill-card">
+          <h3>Cloud Services</h3>
+          <div className="skill-tags">
+            <span><SiCloudinary className="cloudinary" /> Cloudinary</span>
           </div>
         </div>
 

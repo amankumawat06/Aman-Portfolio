@@ -9,9 +9,10 @@ import {
   SiNodedotjs,
   SiExpress,
   SiMongodb,
-  SiRedux,
-  SiGit,
-  SiGithub,
+  // SiRedux,
+  // SiGit,
+  // SiGithub,
+  SiCloudinary
 } from "react-icons/si";
 
 const MoreAboutMe = () => {
@@ -82,6 +83,14 @@ const MoreAboutMe = () => {
                 <div className="hero-skills">
                   <span>
                     <SiMongodb className="mongo" /> MongoDB
+                  </span>
+                </div>
+              </div>
+              <div className="workSkills mt-4">
+                <h4><SiCloudinary/> Cloud Services : </h4>
+                <div className="hero-skills">
+                  <span>
+                    <SiCloudinary className="cloudinary" /> Clouinary
                   </span>
                 </div>
               </div>

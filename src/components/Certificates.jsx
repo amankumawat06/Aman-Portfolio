@@ -24,7 +24,6 @@ const Certificates = () => {
         <h1 className="mb-5 titleLine" style={{color:"#E5E7EB"}}>Certificates</h1>
       </div>
 
-      {/* CERTIFICATES LIST */}
       <div className="certificates">
         {allCertificates.map((certificate, idx) => (
           <div className="certificate" key={idx}>
