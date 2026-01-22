@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import AOS from "aos";
@@ -9,7 +8,6 @@ import "aos/dist/aos.css";
 import Typed from "typed.js";
 
 const Dashboard = () => {
-  const navigate = useNavigate();
   const typedRef = useRef(null);
 
   useEffect(() => {
@@ -106,6 +104,7 @@ const Dashboard = () => {
           href="https://www.instagram.com/amankmwt_06/?next=%2F&hl=en"
           target="_blank"
           className="icon insta"
+          rel="noreferrer"
         >
           <FaInstagram className="social-icon instai" />
         </a>
@@ -113,6 +112,7 @@ const Dashboard = () => {
           href="https://x.com/amankumawatt67"
           target="_blank"
           className="icon tweeter"
+          rel="noreferrer"
         >
           <FaXTwitter className="social-icon tweeterx" />
         </a>
@@ -120,6 +120,7 @@ const Dashboard = () => {
           href="https://www.linkedin.com/in/aman-kumawat-8b3aaa343/"
           target="_blank"
           className="icon linkedin"
+          rel="noreferrer"
         >
           <FaLinkedin className="social-icon lin" />
         </a>
@@ -127,6 +128,7 @@ const Dashboard = () => {
           href="https://github.com/amankumawat06?tab=repositories"
           target="_blank"
           className="icon github"
+          rel="noreferrer"
         >
           <FaGithub className="social-icon githu" />
         </a>

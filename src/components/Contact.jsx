@@ -3,7 +3,6 @@ import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FaXTwitter } from "react-icons/fa6";
 
 
 const contactDetails = [
@@ -12,8 +11,6 @@ const contactDetails = [
     email: "amankumawat4507@gmail.com",
     linkedin: "Aman Kumawat",
     linkedinLink: "https://www.linkedin.com/in/aman-kumawat-8b3aaa343/",
-    // twitter: "Amankumawat",
-    // twitterLink : "https://twitter.com"
   },
 ];
 
@@ -44,17 +41,6 @@ const Contact = () => {
             <FontAwesomeIcon icon={faLinkedin} />
             <span>{contact.linkedin}</span>
           </a>
-
-          {/* <a
-            href={contact.twitterLink}
-            target="_blank"
-            rel="noreferrer"
-            className="contact-item"
-          >
-            <FaXTwitter size={24} color="#22d3ee" />
-            <span>{contact.twitter}</span>
-          </a> */}
-
         </div>
       ))}
     </section>
