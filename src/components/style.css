@@ -1104,3 +1104,10 @@
   }
 }
 
+
+
+@media (max-width:460px) {
+  .project-content {
+    padding: 25px 6px;
+  }
+}
