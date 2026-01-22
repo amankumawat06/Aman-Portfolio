@@ -1,16 +1,55 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { FaInstagram, FaTelegram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Typed from "typed.js";
 
 const Dashboard = () => {
   const navigate = useNavigate();
+  const typedRef = useRef(null);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 1400,
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
+  useEffect(() => {
+    const typed = new Typed(typedRef.current, {
+      strings: [
+        "React",
+        "Node.Js",
+        "Express",
+        "MongoDB",
+        "Clodinary",
+        "JavaScript",
+        "Bootstrap",
+        "Tailwind CSS",
+        "CSS",
+        "HTML",
+      ],
+      typeSpeed: 60,
+      backSpeed: 60,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section className="hero-section" id="about">
       <div className="about-heading">
         <h2 className="titleLine">About</h2>
-        {/* <div className="about-line"></div> */}
       </div>
 
       <div className="hero-container">
@@ -22,22 +61,25 @@ const Dashboard = () => {
           </h1>
 
           <p className="hero-subtitle">
-            BCA graduate from Apex university, focused on building real wrold full stack application <br />
-            <div
-              className="knowMore mt-2"
-              // onClick={() => navigate("/moreAboutMe")}
-            >
-              <Link to="/moreAboutMe" className="knowMore-link" target="_blank" rel="noopener noreferrer">
+            BCA graduate from Apex university, focused on building real wrold
+            full stack applications. <br />
+            <div className="knowMore mt-2">
+              <Link
+                to="/moreAboutMe"
+                className="knowMore-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 know more about me...
               </Link>
             </div>
           </p>
 
-          <div className="hero-skills">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-            <span>Express</span>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <big style={{color:"#b8b3b3"}}>Technical skills - &nbsp; </big>
+            <div id="fs-h3" style={{ color: "#22d3ee" }}>
+              <span ref={typedRef} className="multiple-text"></span>
+            </div>
           </div>
 
           <div className="hero-buttons">
@@ -60,17 +102,33 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="socialIcons d-flex justify-content-center align-items-center">
-        <a href="https://www.instagram.com/amankmwt_06/?next=%2F&hl=en" target="_blank" className="icon insta"> 
-          <FaInstagram className="social-icon instai" /> 
+        <a
+          href="https://www.instagram.com/amankmwt_06/?next=%2F&hl=en"
+          target="_blank"
+          className="icon insta"
+        >
+          <FaInstagram className="social-icon instai" />
         </a>
-        <a href="#" target="_blank" className="icon telegram"> 
-          <FaTelegram className="social-icon Tele"/> 
+        <a
+          href="https://x.com/amankumawatt67"
+          target="_blank"
+          className="icon tweeter"
+        >
+          <FaXTwitter className="social-icon tweeterx" />
         </a>
-        <a href="https://www.linkedin.com/in/aman-kumawat-8b3aaa343/" target="_blank" className="icon linkedin"> 
-          <FaLinkedin className="social-icon lin" /> 
+        <a
+          href="https://www.linkedin.com/in/aman-kumawat-8b3aaa343/"
+          target="_blank"
+          className="icon linkedin"
+        >
+          <FaLinkedin className="social-icon lin" />
         </a>
-        <a href="https://github.com/amankumawat06?tab=repositories" target="_blank" className="icon github"> 
-          <FaGithub className="social-icon githu"/> 
+        <a
+          href="https://github.com/amankumawat06?tab=repositories"
+          target="_blank"
+          className="icon github"
+        >
+          <FaGithub className="social-icon githu" />
         </a>
       </div>
     </section>
