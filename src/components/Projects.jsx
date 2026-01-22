@@ -6,7 +6,7 @@ const projectData = [
     title: "Wanderlust",
     description:[
       "Built a Full-stack listing platform where user can signup, login and explore about hotels in detail.",
-      "Implemented user authentication, image upload functionality & dynamic hotel management using RESTful APIs.",
+      "Implemented user authentication and authorization, image upload functionality & dynamic hotel management using RESTful APIs.",
       "Added search functionality and category based filtering for better navigation",
       "Developed a review system allowing authenticated users to add reviews to listings"
     ],

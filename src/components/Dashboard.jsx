@@ -26,7 +26,7 @@ const Dashboard = () => {
         "Node.Js",
         "Express",
         "MongoDB",
-        "Clodinary",
+        "Cloudinary",
         "JavaScript",
         "Bootstrap",
         "Tailwind CSS",
