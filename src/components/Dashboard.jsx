@@ -74,7 +74,7 @@ const Dashboard = () => {
           </p>
 
           <div style={{ display: "flex", alignItems: "center" }}>
-            <strong style={{color:"#e4e0e0", fontWeight:"500"}}>Technical skills - &nbsp; </strong>
+            <strong style={{color:"#CBD5F5", fontWeight:"400"}}>Technical skills - &nbsp; </strong>
             <div id="fs-h3" style={{ color: "#22d3ee" }}>
               <span ref={typedRef} className="multiple-text"></span>
             </div>
