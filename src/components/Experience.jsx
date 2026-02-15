@@ -5,7 +5,7 @@ const experiences = [
   {
     title: "Full Stack Developer Intern",
     company: "WebMobi360",
-    timeLine: "Oct 2024 - Present",
+    timeLine: "Oct 2025 - Jan 2026",
     desc: [
       "Contributed to real-world full-stack web applications.",
       "Developed modern, responsive UI using React.js and intergrated them into producation ready projects.",

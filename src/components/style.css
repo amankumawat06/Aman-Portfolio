@@ -700,8 +700,8 @@
   margin-bottom: 50px;
 }
 
-/* DOT */
-.exp-dot {
+/* Experience DOT */
+/* .exp-dot {
   position: absolute;
   left: -2px;
   top: 6px;
@@ -710,7 +710,7 @@
   background: #22d3ee;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(34, 211, 238, 0.8);
-}
+} */
 
 .exp-card {
   background: #111827;

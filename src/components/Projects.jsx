@@ -3,6 +3,20 @@ import "./style.css";
 
 const projectData = [
   {
+    title: "FitTrack- Fitness Application",
+    description:[
+      "Built a full-stack web application that covers all aspects of gym services.",
+      "Developed three different dashboards based on user roles(Admin, Trainer, Member).",
+      "Implemenetd user authenticated & authorization with role based access control.",
+      "Intergrated payment system and enabled members to set goals and receive exercise recommendations based on their goals."
+    ],
+    image: "../Images/project-ai.png",
+    tech: ["Node", "Express", "MongoDB","JavaScript", "CSS", "Bootstrap"],
+    category: "fullstack",
+    live: "https://fit-track-fitness-application.vercel.app",
+    github: "https://github.com/amankumawat06/Fitness-Application/blob/main/README.md",
+  },
+  {
     title: "Wanderlust",
     description:[
       "Built a Full-stack listing platform where user can signup, login and explore about hotels in detail.",
@@ -29,19 +43,6 @@ const projectData = [
     category: "fullstack",
     live: "https://trade-x-trading-platform-five.vercel.app/",
     github: "https://github.com/amankumawat06/TradeX-Trading-Platform/blob/main/README.md",
-  },
-  {
-    title: "FitTrack",
-    description:[
-      "Built a responsive Fitness website with user regristration & custom plans.",
-      "Designed a real time BMI calculator and interactive goal-based exercises schedules.",
-      "Implemented simulated payment flow and a clean, modern UI."
-    ],
-    image: "/Images/God.png",
-    tech: ["HTML", "CSS", "JavaScript","Font-awesome","AOS"],
-    category: "frontend",
-    live: "https://amankumawat06.github.io/FitTrack-GYM-website",
-    github: "https://github.com/amankumawat06/FitTrack-GYM-website/blob/main/README.md",
   },
   {
     title: "Instagram web App",
